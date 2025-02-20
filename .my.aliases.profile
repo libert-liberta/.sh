@@ -1,6 +1,9 @@
 #!/bin/bash
 
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias shutdown-wsl='wsl.exe --shutdown'
+alias wsl--shutdown='wsl.exe --shutdown'
+
 
 function ptinker()
 {
