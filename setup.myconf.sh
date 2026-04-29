@@ -18,6 +18,9 @@ do
 	fi
 done
 
+echo ".bashrcに以下を追記してください"
+echo "if [ -f ~/.my.profile ]; then source ~/.my.profile ; fi"
+
 # dirList=()
 # dirList+=("vsnotes")
 # dirList+=(".sqltools")

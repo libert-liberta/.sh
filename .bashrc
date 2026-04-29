@@ -117,4 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 # 自分で追記した分
-if [ -f ~/.myconf.profile ]; then source ~/.myconf.profile ; fi
+if [ -f ~/.my.profile ]; then source ~/.my.profile ; fi
