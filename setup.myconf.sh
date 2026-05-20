@@ -12,21 +12,24 @@ fileList+=(".my.aliases.profile")
 for file in "${fileList[@]}";
 do
 	if [ -f $file ]; then
-		rm $file
+		rm ~/$file
 		ln -s $currentDir/$file ~/$file
 		chmod 755 $file
 	fi
 done
 
-dirList=()
-dirList+=("vsnotes")
-dirList+=(".sqltools")
+echo ".bashrcに以下を追記してください"
+echo "if [ -f ~/.my.profile ]; then source ~/.my.profile ; fi"
 
-for dirRow in "${dirList[@]}";
-do
-	if [ ! -d "~/$dirRow" ]; then
-		ln -s $currentDir/$dirRow ~/$dirRow
-		chmod 755 -R ~/$dirRow
-	fi
-done
+# dirList=()
+# dirList+=("vsnotes")
+# dirList+=(".sqltools")
+
+# for dirRow in "${dirList[@]}";
+# do
+# 	if [ ! -d "~/$dirRow" ]; then
+# 		ln -s $currentDir/$dirRow ~/$dirRow
+# 		chmod 755 -R ~/$dirRow
+# 	fi
+# done
 
