@@ -11,7 +11,7 @@ else
     export PS1=$PS1$endFmt" \w [$formatDate]\n\[\033[00;34m\]\$"
 fi
 
-export PS1=$PS1$endFmt' '
+export PS1=$PS1$endFmt''
 unset endFmt envStr formatDate
 
 # export PS1='\[\033[00;32m\]\u@\h\[\033[00;33m\]'
@@ -37,6 +37,9 @@ export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S "
 
 # パスワードマネージャー
 if [ -f ~/.password/loadprofile.sh ]; then source ~/.password/loadprofile.sh ; fi
+
+# エイリアス
+if [ -f ~/.my.aliases.profile ]; then source ~/.my.aliases.profile ; fi
 
 # Docker Config
 if [ -f ~/.docker.profile ]; then source ~/.docker.profile ; fi
