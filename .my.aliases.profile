@@ -3,7 +3,11 @@
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias shutdown-wsl='wsl.exe --shutdown'
 alias wsl--shutdown='wsl.exe --shutdown'
+
+alias setAllexport='~/.sh/setAllexport.sh'
+
 alias claudeccr='~/.claude-code-router/ccrClaude.sh'
+alias chouwnModClaude='~/.claude-code-router/chouwnmodClaude.sh'
 
 function ptinker()
 {
